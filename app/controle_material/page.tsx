@@ -201,16 +201,21 @@ function Page() {
                                             </div> 
                                             <div style={{display: "flex", justifyContent: "space-evenly", alignItems: "center", marginBottom: "10px"}}>
                                                 <DisplayData value={value['Características Mecânicas']['Tensão de Ruptura (Rm) ']} condition={"numerical"} name={"Tensão de Ruptura"} edit={edit} updateData={updateData}></DisplayData>
+                                                <br/>
                                                 <DisplayData value={value['Características Mecânicas']['Tensão de Escoamento (Re)']} condition={"numerical"} name={"Tensão de Escoamento"} edit={edit} updateData={updateData}></DisplayData>
+                                                <br/>
                                                 <DisplayData value={value['Características Mecânicas']['Limite Elastico (Rp0,2)']} condition={"numerical"} name={"Limite Elastico"} edit={edit} updateData={updateData}></DisplayData>
                                             </div>
                                             <div style={{display: "flex", justifyContent: "space-evenly", alignItems: "center", marginBottom: "10px"}}>
                                                 <DisplayData value={value['Características Mecânicas']['Modulo de elasticidade']} condition={"numerical"} name={"Modulo de Elasticidade"} edit={edit} updateData={updateData}></DisplayData>
+                                                <br/>
                                                 <DisplayData value={value['Características Mecânicas']['Dilatação termica']} condition={"numerical"} name={"Dilatação Termica"} edit={edit} updateData={updateData}></DisplayData>
+                                                <br/>
                                                 <DisplayData value={value['Características Mecânicas']['Alongamento (em 2”) \n% min. ']} condition={"numerical"} name={"Alongamento"} edit={edit} updateData={updateData}></DisplayData>
                                             </div>
                                             <div style={{display: "flex", justifyContent: "space-evenly", alignItems: "center", marginBottom: "10px"}}>
                                                 <DisplayData value={value['Características Mecânicas']['Redução de Área \n(%) min.']} condition={"numerical"} name={"Redução de Area"} edit={edit} updateData={updateData}></DisplayData>
+                                                <br/>
                                                 <DisplayData value={value['Características Mecânicas']['Dureza Brinell ']} condition={"numerical"} name={"Dureza Brinell"} edit={edit} updateData={updateData}></DisplayData>
                                             </div>
                                             <div style={{display: "flex", alignItems: 'center', justifyContent: "center", alignContent: "center", marginTop: "10px", marginBottom: "10px"}}>
