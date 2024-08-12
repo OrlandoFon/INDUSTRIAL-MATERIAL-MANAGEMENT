@@ -140,7 +140,7 @@ function DisplayData({value, condition, name, edit, updateData}: {value: object,
                                             border: edit === false ? "none" : "1px solid black",
                                             outline: edit === false ? 0 : "", cursor: edit === false ? "text" : "",
                                             resize: edit === false ? "none" : "vertical", width: "4cap" }} 
-                                            readOnly={!edit} defaultValue={value["Min."]}></textarea>
+                                            readOnly={!edit} defaultValue={value["Min."] === null ? 0: value["Min."]}></textarea>
                                     </TableCell>
                             ))} 
                             </TableRow>   
@@ -153,7 +153,7 @@ function DisplayData({value, condition, name, edit, updateData}: {value: object,
                                             border: edit === false ? "none" : "1px solid black",
                                             outline: edit === false ? 0 : "", cursor: edit === false ? "text" : "",
                                             resize: edit === false ? "none" : "vertical", width: "4cap" }} 
-                                            readOnly={!edit} defaultValue={value['Max.']}></textarea>
+                                            readOnly={!edit} defaultValue={value['Max.'] == null ? 0: value['Max.']}></textarea>
                                         
                                     </TableCell>
                             ))} 
