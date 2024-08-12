@@ -29,7 +29,7 @@ function Page() {
     const [update, setUpdate] = React.useState(false);
  
     React.useEffect(()=>{
-        fetch("http://localhost:3000/data").
+        fetch("https://json-server-test2-rww2.onrender.com/materiais").
         then((response) => response.json()).
         then((data: any) => {setData(data); setLoading(false)})
     },[])
