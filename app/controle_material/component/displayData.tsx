@@ -134,26 +134,26 @@ function DisplayData({value, condition, name, edit, updateData}: {value: object,
                             <TableRow
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     >   
-                            { Object.entries(value).map(([ket,value]) => (
+                            { Object.entries(value).map(([key,value]) => (
                                     <TableCell component="th" scope="row" align="center" key={uuidv4()}>
                                             <textarea style={{background: edit === false ? "rgba(0,0,0,0)" : "",
                                             border: edit === false ? "none" : "1px solid black",
                                             outline: edit === false ? 0 : "", cursor: edit === false ? "text" : "",
                                             resize: edit === false ? "none" : "vertical", width: "4cap" }} 
-                                            readOnly={!edit} defaultValue={value.min}></textarea>
+                                            readOnly={!edit} defaultValue={value["Min."]}></textarea>
                                     </TableCell>
                             ))} 
                             </TableRow>   
                             <TableRow
                                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     >   
-                            { Object.entries(value).map(([ket,value]) => (
+                            { Object.entries(value).map(([key,value]) => (
                                     <TableCell component="th" scope="row" align="center" key={uuidv4()}>
                                             <textarea style={{background: edit === false ? "rgba(0,0,0,0)" : "",
                                             border: edit === false ? "none" : "1px solid black",
                                             outline: edit === false ? 0 : "", cursor: edit === false ? "text" : "",
                                             resize: edit === false ? "none" : "vertical", width: "4cap" }} 
-                                            readOnly={!edit} defaultValue={value.max}></textarea>
+                                            readOnly={!edit} defaultValue={value['Max.']}></textarea>
                                         
                                     </TableCell>
                             ))} 

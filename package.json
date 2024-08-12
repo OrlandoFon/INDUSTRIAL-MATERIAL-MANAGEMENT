@@ -24,6 +24,8 @@
     "react-granim": "^1.1.0",
     "react-spinners": "^0.14.1",
     "react-spinners-css": "^2.0.1",
+    "reactjs-popup": "^2.0.6",
+    "styled-components": "^6.1.12",
     "uuid": "^10.0.0"
   },
   "devDependencies": {
