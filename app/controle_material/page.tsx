@@ -199,7 +199,7 @@ function Page() {
                                             <div style={{marginTop: "10px", marginBottom: "10px"}}>
                                                 <DisplayData value={value["Composição Quimica  (%)"]} condition={"visual_quim"} name={"Composição Química"} edit={edit} updateData={updateData}></DisplayData>
                                             </div> 
-                                            <div style={{display: "grid", gridTemplateColumns: "200px", gridGap: "50px", alignItems: "center", alignContent: "center", justifyContent: "center", marginBottom: "10px"}}>
+                                            <div style={{display: "grid", gridTemplateColumns: "200px 200px 200px", gridGap: "10px", alignItems: "center", alignContent: "center", justifyContent: "space-evenly", marginBottom: "10px"}}}>
                                                 <DisplayData value={value['Características Mecânicas']['Tensão de Ruptura (Rm) ']} condition={"numerical"} name={"Tensão de Ruptura"} edit={edit} updateData={updateData}></DisplayData>
                                                 <br/>
                                                 <DisplayData value={value['Características Mecânicas']['Tensão de Escoamento (Re)']} condition={"numerical"} name={"Tensão de Escoamento"} edit={edit} updateData={updateData}></DisplayData>
